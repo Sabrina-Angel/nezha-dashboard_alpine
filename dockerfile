@@ -5,7 +5,7 @@ ENV TZ="Asia/Shanghai"
 ARG TARGETOS
 ARG TARGETARCH
 
-COPY ./script/entrypoint.sh /entrypoint.sh
+COPY ./entrypoint.sh /entrypoint.sh
 
 RUN apk update && \
     apk add ca-certificates tzdata && \
